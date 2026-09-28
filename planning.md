@@ -49,9 +49,28 @@
 
 ## What will the project react components be?
 
+- App/
+  - Header/
+  - Content/
+    - Home/
+    - Shop/
+      - ShopCard/
+    - Cart/
+      - CartCard/
+  - Footer/
+
 ## How do you plan to design the application state?
 
+- Shared App state:
+  - Array of each item in the store, with current cart quantity. Passed down to header and each content route to show current live quantity in store, cart, and indicator for items in cart in header.
+  - Increment/decrement state methods can be called from store or cart components.
+  - Thinking don't need to store cart totals, just calculate that using static prices and quantity of each item in cart.
+- Local Shop state:
+  - Array of each item in store with local quantity used for adding to cart. Quantity changes based on increment or decrement on shop page. Also resets to 1 if you tap the add to cart button and update the shared quantity state.
+
 ## Does the project have any side effects and how will they work?
+
+- One effect for calling food API to get data, invoked inside of App.
 
 ## What inputs will your program have? Will the user enter data or will you get input from somewhere else?
 
