@@ -71,7 +71,28 @@
 ## Does the project have any side effects and how will they work?
 
 - One effect for calling food API to get data, invoked inside of App.
+- Define static API URL constant outside of App and then use it in effect inside of app (to avoid dependency array).
+- effect defines controller inside of effect.
+- Defines Async function with try/catch.
+  - Try block fetches data from API endpoint.
+  - Throws error if try not okay.
+  - captures data and sets it, updates status from loading.
+- Catch:
+  - Handles error and displays it
+  - handles abortError and returns function if this error is returned.
+- invokes async function inside of effect to get data.
+- Return statement aborts the controller, this is needed to cancel the in-flight effect if the component unmounts while it is in process.
+- Empty dependency array because this effect runs only on mount in this application.
 
 ## What inputs will your program have? Will the user enter data or will you get input from somewhere else?
 
+- Only inputs are card quantities added from shop page or adjusted from card page. User entered data.
+
 ## How will you design your UI and link it to application state
+
+- Build app component by component in JSX. Initially with entirely hardcoded values.
+- Once component is built with hardcoded values, then pass down hardcoded props (including hardcoded pizza data in correct shape).
+- Once all components are built with hardcoded props, then refactor to add in state.
+- Add in effect of dynamically pulling pizza data from the API.
+
+## How will you test the project?
