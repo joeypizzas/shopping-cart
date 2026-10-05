@@ -96,3 +96,24 @@
 - Add in effect of dynamically pulling pizza data from the API.
 
 ## How will you test the project?
+
+- Testing approach:
+  - Use Vitest as the test runner and React Testing Library to render the app and interact with its UI.
+  - Test observable behavior rather than component internals: what users can see, enter, click, and navigate to.
+  - Use accessible queries such as button roles and input labels, and simulate interactions with `user-event`.
+- Component tests:
+  - Check that quantity controls in a shop card and cart card display and respond to user input.
+  - Check validation and feedback where they are visible to the user.
+- Integration tests:
+  - Render the app and test at least one complete cart flow:
+    1. Add a pizza with a chosen quantity.
+    2. Verify the cart indicator updates.
+    3. Navigate to the cart and verify the item, quantity, and total.
+    4. Change or remove the item and verify the displayed results update.
+- API states:
+  - Test that the Shop page displays loading, error, empty-catalog, and populated-catalog states.
+  - Use predictable mocked API responses; tests should not depend on the live API.
+- Test boundaries:
+  - Don’t test React Router internals. Test that using the app’s navigation shows the expected page.
+  - Avoid assertions about React state, component hierarchy, CSS classes, or internal function calls.
+  - Use test-first development for important interactions when it helps: write a failing behavior test, implement the smallest change, then refactor while keeping it passing.
