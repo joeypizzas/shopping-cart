@@ -1,1 +1,6 @@
 /* Content component style */
+
+.content-container {
+  flex: 1;
+  background-color: var(--cream-page-background);
+}
