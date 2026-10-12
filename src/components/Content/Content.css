@@ -3,4 +3,7 @@
 .content-container {
   flex: 1;
   background-color: var(--cream-page-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
