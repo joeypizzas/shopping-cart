@@ -1,3 +1,3 @@
 // Cart component
 
-import "./Cart.jsx";
+import "./Cart.css";
