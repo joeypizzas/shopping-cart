@@ -3,7 +3,7 @@
 .home-container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .home-title-subtitle {
@@ -13,12 +13,34 @@
 }
 
 .home-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--charcoal-primary-text);
 }
 
 .home-subtitle {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: var(--warm-gray-secondary-text);
+}
+
+.pizza-image {
+  max-width: 500px;
+  border-radius: 8px;
+}
+
+.home-button {
+  padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+  background-color: var(--tomato-primary-button);
+  color: var(--white-card-surface);
+  border: 1px solid var(--light-dough-border);
+  border-radius: 8px;
+  align-self: center;
+}
+
+.home-button:hover {
+  background-color: var(--deep-tomato-button-hover);
+}
+
+.home-button:active {
+  background-color: var(--basil-accent);
 }

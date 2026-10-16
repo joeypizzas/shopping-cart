@@ -9,13 +9,13 @@ export function Home() {
       <div className="home-title-subtitle">
         <div className="home-title">Good pizza. Made fresh.</div>
         <div className="home-subtitle">
-          FInd your next favorite and let the pizza plans take care of
-          themselves.
+          Let the pizza plans take care of themselves.
         </div>
       </div>
       <img
         src={pizzaImage}
         alt="New Haven style pepperoni apizza coming out of an oven"
+        className="pizza-image"
       />
       <button className="home-button">Order now</button>
     </div>
