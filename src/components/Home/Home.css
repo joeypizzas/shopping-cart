@@ -28,19 +28,20 @@
   border-radius: 8px;
 }
 
-.home-button {
+.pizza-button {
   padding: 0.5rem 1.25rem 0.5rem 1.25rem;
   background-color: var(--tomato-primary-button);
   color: var(--white-card-surface);
   border: 1px solid var(--light-dough-border);
   border-radius: 8px;
   align-self: center;
+  text-decoration: none;
 }
 
-.home-button:hover {
+.pizza-button:hover {
   background-color: var(--deep-tomato-button-hover);
 }
 
-.home-button:active {
+.pizza-button:active {
   background-color: var(--basil-accent);
 }

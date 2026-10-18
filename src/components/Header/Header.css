@@ -26,6 +26,7 @@
   border: 1px solid var(--light-dough-border);
   border-radius: 10px;
   font-size: 0.85rem;
+  text-decoration: none;
 }
 
 .header-button:hover {
@@ -33,5 +34,9 @@
 }
 
 .header-button:active {
+  background-color: var(--basil-accent);
+}
+
+.header-button.active {
   background-color: var(--basil-accent);
 }

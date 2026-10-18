@@ -2,6 +2,7 @@
 
 import "./Home.css";
 import pizzaImage from "../../assets/home-apizza.png";
+import { NavLink } from "react-router";
 
 export function Home() {
   return (
@@ -17,7 +18,10 @@ export function Home() {
         alt="New Haven style pepperoni apizza coming out of an oven"
         className="pizza-image"
       />
-      <button className="home-button">Order now</button>
+
+      <NavLink to="/shop" className="pizza-button">
+        Order now
+      </NavLink>
     </div>
   );
 }
