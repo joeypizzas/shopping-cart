@@ -1,1 +1,16 @@
 /* ShopCard component style */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-placeholder {
+  padding: 5rem;
+  background-color: var(--basil-accent);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
