@@ -1,1 +1,12 @@
 /* Shop component style */
+
+.shop-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.shop-header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--charcoal-primary-text);
+}
