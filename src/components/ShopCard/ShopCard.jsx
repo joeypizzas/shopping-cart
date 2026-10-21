@@ -14,11 +14,11 @@ export function ShopCard() {
         </div>
         <div className="card-price">$11.99</div>
         <div className="quantity-container">
-          <button className="quantity-minus-button">-</button>
+          <button className="quantity-button">-</button>
           <div className="quantity-amount">1</div>
-          <button className="quantity-plus-button">+</button>
+          <button className="quantity-button">+</button>
         </div>
-        <button>Add to cart</button>
+        <button className="add-cart-button">Add to cart</button>
       </div>
     </div>
   );
