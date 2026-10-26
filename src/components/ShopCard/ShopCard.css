@@ -3,33 +3,41 @@
 .card-container {
   display: flex;
   flex-direction: column;
+  gap: 0;
+  background: var(--white-card-surface);
+  border: 1px solid var(--light-dough-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgb(41 37 34 / 8%);
 }
 
 .img-placeholder {
-  padding: 5rem;
+  min-height: 225px;
   background-color: var(--basil-accent);
 }
 
 .card-content {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 1rem;
+  padding: 1.25rem;
 }
 
 .card-title {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--charcoal-primary-text);
 }
 
 .card-description {
-  color: var(--charcoal-primary-text);
+  color: var(--warm-gray-secondary-text);
   font-size: 0.9rem;
 }
 
 .card-price {
   color: var(--charcoal-primary-text);
   font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .quantity-container {
@@ -42,33 +50,40 @@
 }
 
 .quantity-button {
-  background-color: var(--tomato-primary-button);
+  background-color: var(--warm-gray-secondary-text);
   color: var(--white-card-surface);
   padding: 0.5rem 0.9rem 0.5rem 0.9rem;
   border: 1px solid var(--light-dough-border);
   border-radius: 6px;
   text-decoration: none;
+  transition: transform 100ms ease;
 }
 
 .quantity-button:hover {
-  background-color: var(--deep-tomato-button-hover);
+  background-color: var(--warm-gray-button-hover);
 }
 
 .quantity-button:active {
-  background-color: var(--basil-accent);
+  transform: scale(0.95);
 }
 
 .quantity-amount {
   color: var(--charcoal-primary-text);
   font-weight: 500;
+  font-size: 1.1rem;
 }
 
 .add-cart-button {
   transition: transform 100ms ease;
   padding: 0.5rem 0.9rem 0.5rem 0.9rem;
   border: none;
-  background-color: var(--warm-gray-secondary-text);
+  background-color: var(--tomato-primary-button);
   color: var(--white-card-surface);
+  border-radius: 6px;
+}
+
+.add-cart-button:hover {
+  background-color: var(--deep-tomato-button-hover);
 }
 
 .add-cart-button:active {

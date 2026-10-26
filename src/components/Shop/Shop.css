@@ -3,6 +3,7 @@
 .shop-container {
   display: flex;
   flex-direction: column;
+  gap: 2.5rem;
 }
 
 .shop-header {
