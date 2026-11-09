@@ -1,1 +1,17 @@
 /* Cart component style */
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-header {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--charcoal-primary-text);
+}
+
+.cart-cards-container {
+  display: flex;
+  flex-direction: column;
+}
