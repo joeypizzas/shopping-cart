@@ -1,1 +1,86 @@
 /* CartCard component style */
+
+.cart-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name-and-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.item-name {
+  color: var(--charcoal-primary-text);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.item-price {
+  color: var(--warm-gray-secondary-text);
+  font-size: 0.9rem;
+}
+
+.item-quantity-total-and-remove {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-button {
+  background-color: var(--warm-gray-secondary-text);
+  color: var(--white-card-surface);
+  padding: 0.5rem 0.9rem 0.5rem 0.9rem;
+  border: 1px solid var(--light-dough-border);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 100ms ease;
+}
+
+.quantity-button:hover {
+  background-color: var(--warm-gray-button-hover);
+}
+
+.quantity-button:active {
+  transform: scale(0.95);
+}
+
+.quantity {
+  color: var(--charcoal-primary-text);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.total-and-remove {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.total {
+  color: var(--charcoal-primary-text);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.remove-button {
+  color: var(--tomato-primary-button);
+  text-decoration: underline;
+  border: none;
+  background-color: var(--cream-page-background);
+}
+
+.remove-button:hover {
+  color: var(--deep-tomato-button-hover);
+}
+
+.remove-button:active {
+  color: var(--basil-accent);
+}
