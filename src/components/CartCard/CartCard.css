@@ -4,6 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10rem;
+  background-color: var(--white-card-surface);
+  border: 1px solid var(--light-dough-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgb(41 37 34 / 8%);
+  padding: 1.25rem;
 }
 
 .item-name-and-price {
@@ -74,7 +81,7 @@
   color: var(--tomato-primary-button);
   text-decoration: underline;
   border: none;
-  background-color: var(--cream-page-background);
+  background-color: var(--white-card-surface);
 }
 
 .remove-button:hover {
