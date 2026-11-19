@@ -80,6 +80,7 @@
   background-color: var(--tomato-primary-button);
   color: var(--white-card-surface);
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .add-cart-button:hover {

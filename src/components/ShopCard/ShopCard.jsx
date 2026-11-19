@@ -23,3 +23,5 @@ export function ShopCard() {
     </div>
   );
 }
+
+// next up, figure out empty state for cart card
